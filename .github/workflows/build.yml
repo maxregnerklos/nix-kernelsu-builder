@@ -6,9 +6,6 @@ on:
       - main
       - master
   schedule:
-    # rebuild everyday at 2:51
-    # TIP: Choose a random time here so not all repositories are build at once:
-    # https://www.random.org/clock-times/?num=1&earliest=01%3A00&latest=08%3A00&interval=5&format=html&rnd=new
     - cron: '50 7 * * *'
 jobs:
   build-packages:
@@ -20,6 +17,7 @@ jobs:
           - moto-rtwo-lineageos-21
           - moto-rtwo-lineageos-22_1
           - oneplus-8t-blu-spark
+          - akatsuki-sony-xperia-xz3
     runs-on: ubuntu-latest
     env:
       GIT_SSL_NO_VERIFY: 'true'
