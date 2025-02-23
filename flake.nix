@@ -24,9 +24,9 @@
         ./flake-modules
         ./flake-modules/commands.nix
         inputs.nur-xddxdd.flakeModules.commands
-        inputs.nur-xddxdd.flakeModules.lantian-pre-commit-hooks
-        inputs.nur-xddxdd.flakeModules.lantian-treefmt
-        inputs.nur-xddxdd.flakeModules.nixpkgs-options
+        inputs.nur-xddxsd.flakeModules.lantian-pre-commit-hooks
+        inputs.nur-xddxsd.flakeModules.lantian-treefmt
+        inputs.nur-xddxsd.flakeModules.nixpkgs-options
       ];
 
       systems = [ "x86_64-linux" ];
@@ -42,6 +42,7 @@
           packages = {
             gcc-aarch64-linux-android = pkgs.callPackage pkgs/gcc-aarch64-linux-android.nix { };
             gcc-arm-linux-androideabi = pkgs.callPackage pkgs/gcc-arm-linux-androideabi.nix { };
+            akatsuki-sony-xperia-xz3 = pkgs.callPackage ./akatsuki-sony-xperia-xz3.nix { };
           };
         };
     };
